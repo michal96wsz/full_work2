@@ -74,7 +74,8 @@ public class SQL_implementation {
 
 	public static void main(String... args) throws SQLException {
 		SQL_implementation obj = new SQL_implementation("localhost", "fw_mws", "root", "8delfinek!8");
-		System.out.println((obj.getCredentialsAsHashMap("b_bou@sth.com")).get("password")); 
+		System.out.println((obj.getCredentialsAsHashMap("b_bou@sth.com")).get("password"));
+		System.out.println("finally on git");
 	}
 		
 }
