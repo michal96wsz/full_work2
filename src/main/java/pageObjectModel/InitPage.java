@@ -26,8 +26,6 @@ public class InitPage extends MainTools{
 	@FindBy(css = "a[class*=link]")
 	WebElement forgotPasswordLinkElement;
 	
-	
-	
-	
+//abc
 	
 }
