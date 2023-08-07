@@ -17,8 +17,14 @@ public class InitPage extends MainTools{
 		PageFactory.initElements(this.myDriver, this);
 	}
 	
-	@FindBy(css = " ")
+	@FindBy(css = "input#userEmail")
 	WebElement userNameElement; 
+	
+	@FindBy(css = "input#userPassword")
+	WebElement userPasswordElement;
+	
+	@FindBy(css = "a[class*=link]")
+	WebElement forgotPasswordLinkElement;
 	
 	
 	

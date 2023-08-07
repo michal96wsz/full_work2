@@ -32,7 +32,7 @@ public class DriverManager {
 	
 	@AfterTest
 	public void closeEnv() {
-		DriverManager.myDriver.close();
+		//DriverManager.myDriver.close();
 	}
 	public static void main(String... args) {
 		/*
