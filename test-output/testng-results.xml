@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-07T19:11:29 CEST" name="Whole" finished-at="2023-08-07T19:11:34 CEST" duration-ms="5050">
+    <groups>
+    </groups>
+    <test started-at="2023-08-07T19:11:29 CEST" name="Test" finished-at="2023-08-07T19:11:34 CEST" duration-ms="5050">
+      <class name="tests.WelcomePage">
+        <test-method is-config="true" signature="initEnv()[pri:0, instance:tests.WelcomePage@1ca3b418]" started-at="2023-08-07T19:11:29 CEST" name="initEnv" finished-at="2023-08-07T19:11:31 CEST" duration-ms="2125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initEnv -->
+        <test-method signature="checkWrongCredentials()[pri:0, instance:tests.WelcomePage@1ca3b418]" started-at="2023-08-07T19:11:31 CEST" name="checkWrongCredentials" finished-at="2023-08-07T19:11:34 CEST" duration-ms="2804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkWrongCredentials -->
+        <test-method is-config="true" signature="closeEnv()[pri:0, instance:tests.WelcomePage@1ca3b418]" started-at="2023-08-07T19:11:34 CEST" name="closeEnv" finished-at="2023-08-07T19:11:34 CEST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeEnv -->
+      </class> <!-- tests.WelcomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Whole -->
+</testng-results>
