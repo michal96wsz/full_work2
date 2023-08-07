@@ -27,5 +27,5 @@ public class InitPage extends MainTools{
 	WebElement forgotPasswordLinkElement;
 	
 //abc
-	
+//cde
 }
