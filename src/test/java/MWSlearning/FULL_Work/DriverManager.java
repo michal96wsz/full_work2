@@ -2,6 +2,7 @@ package MWSlearning.FULL_Work;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -19,8 +20,9 @@ public class DriverManager {
 	private static void initDriver() {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\SeleniumDrivers\\chromedriver.exe");
-		
-		DriverManager.myDriver = new ChromeDriver();
+		ChromeOptions opi = new ChromeOptions();
+		opi.addArguments("start-maximized");
+		DriverManager.myDriver = new ChromeDriver(opi);
 		System.out.println(DriverManager.myDriver.hashCode());
 		//DriverManager.myDriver.get("https://rahulshettyacademy.com/client");
 	}
