@@ -49,20 +49,25 @@ public class InitPage extends MainTools{
 		public void fillTextFields(HashMap<String, String> mapka) {
 			
 			String labelText;
+			//HashMap<String, String> mapka = new HashMap<String, String>();
 			System.out.println("Jest we funkcji" + textFieldsList.size());
-			for(WebElement ele : textFieldsList) {
-				labelText = ele.findElement(By.xpath("parent::*/label")).getText();
-				System.out.println(labelText);
-				if(mapka.containsKey(labelText)) {
-					ele.sendKeys(mapka.get(labelText));
-					
+		
+			
+				for(WebElement ele : textFieldsList) {
+					labelText = ele.findElement(By.xpath("parent::*/label")).getText();
+					System.out.println(labelText);
+					if(mapka.containsKey(labelText)) {
+						ele.sendKeys(mapka.get(labelText));
+						
+					}
+					else if (labelText.contains("Confirm")) {
+						ele.sendKeys(mapka.get("Password"));
+					}
 				}
-				else if (labelText.contains("Confirm")) {
-					ele.sendKeys(mapka.get("Password"));
-				}
+			
 			}
 			
-		}
+		
 		
 		
 		public void selectOccupation(String occupation) {

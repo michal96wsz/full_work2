@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 
@@ -16,11 +17,11 @@ import net.bytebuddy.asm.Advice.Return;
 
 public class JSONparser {
 	
-	public static HashMap<String, String> parseJSONtoHashMap(String path) throws IOException {
+	public static List<HashMap<String, String>> parseJSONtoHashMap(String path) throws IOException {
 		File jsonFile = new File(path);
 		String jsonString = FileUtils.readFileToString(jsonFile, StandardCharsets.UTF_8);
 		ObjectMapper mapper = new ObjectMapper();
-		HashMap<String, String> mapka = mapper.readValue(jsonString, new TypeReference<HashMap<String, String>>() {});
+		List<HashMap<String, String>> mapka = mapper.readValue(jsonString, new TypeReference<List<HashMap<String, String>>>() {});
 		
 		return mapka;
 	}
